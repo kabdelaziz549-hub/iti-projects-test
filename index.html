@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Head Section -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kareem's personal portfolio page">
+    <title>My Portfolio</title>
+
+    <link rel="icon" href="Pohto.jpeg">
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>My Portfolio</h1>
+
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#courses">Courses</a> |
+            <a href="#gallery">Gallery</a> |
+            <a href="#contact">Contact</a> |
+            <a href="#faq">FAQ</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is Kareem abd el aziz.<br>
+                I am an <strong>Information Technology</strong> student
+                interested in <em>web development</em> and programming.
+            </p>
+
+            <span>I am learning new technologies every day.</span>
+            <br><br>
+
+            <!-- Personal Photo -->
+            <img
+                src="Pohto.jpeg"
+                alt="My personal photo"
+                width="150"
+                height="150"
+            >
+        </section>
+
+        <hr>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>Networking</li>
+            </ul>
+
+            <h3>My Learning Journey</h3>
+
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <p>
+                I am <strong>serious</strong> about learning.
+                I <em>enjoy</em> programming.
+                <mark>Practice is important.</mark>
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Courses Section -->
+        <section id="courses">
+            <h2>My Courses</h2>
+
+            <table border="1">
+                <caption>Courses I Have Studied</caption>
+
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td rowspan="2">2 Months</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS</td>
+                        <td>Learning</td>
+                    </tr>
+
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>3 Months</td>
+                        <td>Learning</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">C# Programming</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">More courses coming soon.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2>My Gallery</h2>
+
+            <figure>
+                <img
+                    src="https://via.placeholder.com/200"
+                    alt="Web development image"
+                    width="200"
+                    height="200"
+                >
+                <figcaption>Web Development</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="https://via.placeholder.com/200"
+                    alt="Programming image"
+                    width="200"
+                    height="200"
+                >
+                <figcaption>Programming</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="https://via.placeholder.com/200"
+                    alt="Networking image"
+                    width="200"
+                    height="200"
+                >
+                <figcaption>Networking</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <br><br>
+
+                <!-- Phone -->
+                <label for="phone">Phone:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                >
+
+                <br><br>
+
+                <!-- Date -->
+                <label for="date">Date:</label>
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                >
+
+                <br><br>
+
+                <!-- Select -->
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="web">Web Development</option>
+                    <option value="programming">Programming</option>
+                    <option value="networking">Networking</option>
+                </select>
+
+                <br><br>
+
+                <!-- Preferred Contact Method -->
+                <span>Preferred Contact Method:</span>
+                <br>
+
+                <input
+                    type="radio"
+                    id="contactEmail"
+                    name="contactMethod"
+                    value="email"
+                    checked
+                >
+                <label for="contactEmail">Email</label>
+
+                <input
+                    type="radio"
+                    id="contactPhone"
+                    name="contactMethod"
+                    value="phone"
+                >
+                <label for="contactPhone">Phone</label>
+
+                <br><br>
+
+                <!-- Checkbox -->
+                <input
+                    type="checkbox"
+                    id="subscribe"
+                    name="subscribe"
+                >
+                <label for="subscribe">
+                    Subscribe to my updates
+                </label>
+
+                <br><br>
+
+                <!-- Message -->
+                <label for="message">Message:</label>
+                <br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="40"
+                    placeholder="Write your message here"
+                ></textarea>
+
+                <br><br>
+
+                <!-- Buttons -->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <details>
+                <summary>What do you study?</summary>
+                <p>I study Information Technology.</p>
+            </details>
+
+            <details>
+                <summary>What programming language do you use?</summary>
+                <p>I use C# and I am also learning web technologies.</p>
+            </details>
+
+            <details>
+                <summary>What are you interested in?</summary>
+                <p>I am interested in programming, web development, and networking.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+
+        <address>
+            Email: kareem@example.com<br>
+            Location: Egypt
+        </address>
+
+        <p>
+            &copy; 2026 Kareem. All rights reserved.
+        </p>
+
+        <p>
+            Social Media:
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            &nbsp;|&nbsp;
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>
