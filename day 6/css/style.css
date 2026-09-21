@@ -1,0 +1,131 @@
+:root{
+    --primary-color: #0a192f;
+    --secondary-color: #00ff88;
+    --text-color: #333;
+    --bg-light: #f5f7fa;
+    --card-bg: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    background-image: url(../assets/images/KK.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Grouped Selectors */
+h1, h2{
+    color: var(--primary-color);
+}
+
+#main-header{
+    background: linear-gradient(rgba(10,25,47,0.85), rgba(10,25,47,0.85)), url(../assets/images/profile.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 20vh;
+    min-height: 140px;
+    text-align: center;
+    padding: 2rem;
+}
+
+#main-header h1{
+    color: white;
+}
+#main-header p{
+    color: #ccc;
+}
+
+.profile-card{
+    background-color: var(--card-bg);
+    width: 60%;
+    max-width: 700px;
+    margin: 40px auto;
+    border-radius: 15px;
+    text-align: center;
+    --card-padding: 30px;
+    padding: var(--card-padding);
+}
+
+.profile-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+    cursor: grab;
+}
+
+.profile-card p{
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+/* Child Combinator */
+.profile-card > .profile-info{
+    margin-bottom: 25px;
+}
+
+.profile-name{ font-size: 28px; }
+.profile-name{ color: blue; }
+#main-profile .profile-name{ color: var(--primary-color); }
+
+.about-box{
+    background-color: #f0f0f0;
+    height: 120px;
+    overflow: auto;
+    cursor: help;
+    padding: 15px;
+    text-align: left;
+    border-left: 4px solid var(--secondary-color);
+    margin: 15px 0;
+}
+
+.skills-list{
+    list-style: none;
+    margin: 20px 0;
+}
+
+.skills-list li{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: not-allowed;
+}
+
+.contact-button{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.contact-button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.main-footer{
+    background-color: var(--primary-color);
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-footer p{
+    color: white !important;
+}
